@@ -856,11 +856,9 @@ img.eq-image {
   top: 0;
 }
 
-.table-tabs {
-  display: block;
+.modal-tabs {
   width: 100%;
   margin: auto;
-  font-size: 0px;
   position: relative;
   margin-bottom: 0.5rem;
 }
@@ -890,7 +888,7 @@ img.eq-image {
    border: solid 1px;
    box-shadow: none;
  }
-.t-tab.selected{
+.t-tab.active{
   background-color: #00bdff;
   background-color: var(--primaryColor);
   border: none;
@@ -912,9 +910,12 @@ img.eq-image {
   box-sizing: border-box;
   transition: all 0.2s;
   border-radius: 50%;
-  width: 32px;
+  position: absolute;
+  right: 0;
   height: 32px;
-  display: flex;
+  top: 5px;
+  width: 32px;
+
   padding: 0;
   justify-content: center;
   align-items: center;
