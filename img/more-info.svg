@@ -1,0 +1,10 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Component_8_1" data-name="Component 8 – 1" width="127" height="31" viewBox="0 0 127 31">
+  <g id="Rectangle_18" data-name="Rectangle 18" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="127" height="31" rx="15.5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="126" height="30" rx="15" fill="none"/>
+  </g>
+  <text id="MORE_INFO" data-name="MORE INFO" transform="translate(53.289 19.46)" fill="#fff" font-size="12" font-family="AvenirNext-DemiBold, Avenir Next" font-weight="300" letter-spacing="0.1em"><tspan x="-39.252" y="0">MORE INFO</tspan></text>
+  <circle id="Ellipse_31" data-name="Ellipse 31" cx="1.5" cy="1.5" r="1.5" transform="translate(102 14)" fill="#fff"/>
+  <circle id="Ellipse_37" data-name="Ellipse 37" cx="1.5" cy="1.5" r="1.5" transform="translate(107 14)" fill="#fff"/>
+  <circle id="Ellipse_38" data-name="Ellipse 38" cx="1.5" cy="1.5" r="1.5" transform="translate(112 14)" fill="#fff"/>
+</svg>
