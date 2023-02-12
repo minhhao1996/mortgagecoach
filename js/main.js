@@ -6,3 +6,9 @@ $(function() {
 $('.switch-view').on('click', function(){
   $('.content').toggleClass('container-small container-fluid');
 });
+$('#reinvestment-strategy-tab').on('click', function(){
+  $('#staticBackdrop .inner-container').css('max-width','1400px');
+});
+$('#payment-breakdown-tab ,#closing-costs-tab').on('click', function(){
+  $('#staticBackdrop .inner-container').css('max-width','900px');
+});
