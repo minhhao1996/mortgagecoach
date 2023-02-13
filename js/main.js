@@ -34,13 +34,13 @@ function drawChart1() {
     ['OPTION 3 - 6.75%', 176.25],
     ['OPTION 4 - 7.75%', 0],
   ]);
-  var view = new google.visualization.DataView(data);
-  var formatter = new google.visualization.NumberFormat({
+  let view = new google.visualization.DataView(data);
+  let formatter = new google.visualization.NumberFormat({
     prefix: 'Monthly Payment Different: $',
     pattern: '#,##0.00'
   });
   formatter.format(data, 1);
-  var options = {
+  let options = {
     // title: 'MONTHLY PAYMENT DIFFERENCE',
 
     hAxis: {
@@ -61,7 +61,7 @@ function drawChart1() {
     dataOpacity: 1.0
   };
 
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_month'));
+  let chart = new google.visualization.ColumnChart(document.getElementById('chart_month'));
   chart.draw(data, options);
 
   window.addEventListener('resize', function () {
@@ -74,7 +74,7 @@ google.charts.load('current', {'packages': ['corechart']});
 google.charts.setOnLoadCallback(drawChart2);
 
 function drawChart2() {
-  var data = new google.visualization.DataTable();
+  let data = new google.visualization.DataTable();
   data.addColumn('string');
   data.addColumn('number');
 
@@ -84,13 +84,13 @@ function drawChart2() {
     ['OPTION 3 - 6.75%', 5882],
     ['OPTION 4 - 7.75%', 0],
   ]);
-  var view = new google.visualization.DataView(data);
-  var formatter = new google.visualization.NumberFormat({
+  let view = new google.visualization.DataView(data);
+  let formatter = new google.visualization.NumberFormat({
     prefix: 'Monthly Payment Different: $',
     pattern: '#,##0.00'
   });
   formatter.format(data, 1);
-  var options = {
+  let options = {
     // title: 'MONTHLY PAYMENT DIFFERENCE',
 
     hAxis: {
@@ -111,7 +111,7 @@ function drawChart2() {
     dataOpacity: 1.0
   };
 
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_saving'));
+  let chart = new google.visualization.ColumnChart(document.getElementById('chart_saving'));
   chart.draw(data, options);
 
   window.addEventListener('resize', function () {
@@ -124,7 +124,7 @@ function drawChart2() {
 google.charts.setOnLoadCallback(drawChart3);
 
 function drawChart3() {
-  var data = new google.visualization.DataTable();
+  let data = new google.visualization.DataTable();
   data.addColumn('string');
   data.addColumn('number');
 
@@ -134,13 +134,13 @@ function drawChart3() {
     ['OPTION 3 - 6.75%', 234935],
     ['OPTION 4 - 7.75%', 274111],
   ]);
-  var view = new google.visualization.DataView(data);
-  var formatter = new google.visualization.NumberFormat({
+  let view = new google.visualization.DataView(data);
+  let formatter = new google.visualization.NumberFormat({
     prefix: 'Monthly Payment Different: $',
     pattern: '#,##0.00'
   });
   formatter.format(data, 1);
-  var options = {
+  let options = {
     // title: 'MONTHLY PAYMENT DIFFERENCE',
 
     hAxis: {
@@ -162,7 +162,7 @@ function drawChart3() {
     dataOpacity: 1.0
   };
 
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_interest'));
+  let chart = new google.visualization.ColumnChart(document.getElementById('chart_interest'));
   chart.draw(data, options);
 
   window.addEventListener('resize', function () {

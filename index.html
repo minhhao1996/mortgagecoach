@@ -294,10 +294,11 @@
             <div class="chart-position">
                 <div class="chart-title">
                     <div class="chart-title__1">
-             <span>
-              MONTHLY PAYMENT DIFFERENCE
-            </span>
-                        <div aria-label="More Info Button" tabindex="0" role="button" class="more-info"></div>
+                         <span>
+                          MONTHLY PAYMENT DIFFERENCE
+                        </span>
+                        <div aria-label="More Info Button" tabindex="0" role="button" class="more-info"
+                             data-bs-toggle="modal" data-bs-target="#monthlyPaymentModal"></div>
                     </div>
                 </div>
                 <div id="chart_month" class="chart-home"
@@ -319,7 +320,8 @@
                          <span>
                          SAVINGS OVER 36 MONTHS
                         </span>
-                        <div aria-label="More Info Button" tabindex="0" role="button" class="more-info"></div>
+                        <div tabindex="0" role="button" class="more-info"
+                             data-bs-toggle="modal" data-bs-target="#savingOverModal"></div>
                     </div>
                 </div>
                 <div id="chart_saving" class="chart-home"
@@ -344,10 +346,11 @@
             <div class="chart-position">
                 <div class="chart-title">
                     <div class="chart-title__1">
-             <span>
-              INTEREST IN 15 YEARS
-            </span>
-                        <div aria-label="More Info Button" tabindex="0" role="button" class="more-info"></div>
+                         <span>
+                          INTEREST IN 15 YEARS
+                        </span>
+                        <div aria-label="More Info Button" tabindex="0" role="button" class="more-info"
+                             data-bs-toggle="modal" data-bs-target="#yearAnalysisModal"></div>
                     </div>
                 </div>
                 <div id="chart_interest" class="chart-home"
@@ -357,7 +360,6 @@
                             MI paid for each loan over the long-
                             term years specified."
                 >
-
                 </div>
             </div>
             <!--         End Chart SINTEREST IN 15 YEARS-->
@@ -616,15 +618,18 @@
                                 </tr>
                                 <tr class="row-des">
                                     <td colspan="5">
-                                        <p class="table-info-cell long">UFMIP - FHA Upfront MIP; FF - VA Funding Fee; GF
-                                            - USDA Guarantee Fee; SP - Single Premium</p>
+                                        <div class="table-info-cell">
+                                            <p class="long">UFMIP - FHA Upfront MIP; FF - VA Funding Fee; GF
+                                                - USDA Guarantee Fee; SP - Single Premium</p>
+                                        </div>
+
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="chart-position">
+                    <div class="chart-position mt-2">
                         <div class="chart-title">
                             <div class="chart-title__1">
                                  <span>
@@ -814,6 +819,277 @@
     </div>
 </div>
 <!-- End Modal translate-->
+
+<!-- Modal MONTHLY PAYMENT DIFFERENCE table-->
+<div class="modal fade" id="monthlyPaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog inner-container">
+        <button type="button" class="inner-container-x x-chart" data-bs-dismiss="modal" aria-label="Close">×
+        </button>
+        <div class="summary">
+            <div class="table-label-and-filter">
+                <div class="table-label">MONTHLY PAYMENT DIFFERENCE</div>
+            </div>
+            <div class="table-fixed-column">
+                <table>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>OPTION 1 - 5.875%</th>
+                        <th>OPTION 2 - 5.875%</th>
+                        <th>OPTION 3 - 5.875%</th>
+                        <th>OPTION 4 - 5.875%</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>LOAN AMOUNT:</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>INTEREST RATE:</td>
+                        <td>$1,496.13 /td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>*APR:</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                    </tr>
+                    <tr>
+                        <td>AMORTIZATION TYPE:</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                    </tr>
+                    <tr>
+                        <td>TERM (MOS):</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                    </tr>
+                    <tr class="table-border">
+                        <td>MTG INSURANCE:</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                    </tr>
+                    <tr>
+                        <td>PAYMENT:</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL PAYMENT:</td>
+                        <td class="orange">$2,058.02</td>
+                        <td class="orange">$2,058.02</td>
+                        <td class="orange">$2,058.02</td>
+                        <td class="orange">$2,058.02</td>
+                    </tr>
+                    <tr class="row-des">
+                        <td colspan="5">
+                            <div class="table-info-cell">
+                                <p class="tax-appreciate">Property Appreciation: 4% Tax Bracket: 0%</p>
+                                <p class="long">This section overviews an estimate of your monthly payments
+                                    for each prospective mortgage plan. Note that the payment may include all applicable
+                                    taxes and insurance.</p>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal translate-->
+
+<!-- Modal SAVINGS OVER 36 MONTHS table-->
+<div class="modal fade" id="savingOverModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog inner-container">
+        <button type="button" class="inner-container-x x-chart" data-bs-dismiss="modal" aria-label="Close">×
+        </button>
+        <div class="summary">
+            <div class="table-label-and-filter">
+                <div class="table-label">36 MONTHS ANALYSIS</div>
+            </div>
+            <div class="table-fixed-column">
+                <table>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>OPTION 1 - 5.875%</th>
+                        <th>OPTION 2 - 5.875%</th>
+                        <th>OPTION 3 - 5.875%</th>
+                        <th>OPTION 4 - 5.875%</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>TOTAL P&I PMT:</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>PRINCIPAL PAID:</td>
+                        <td>$1,496.13 /td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>BALANCE REMAIN:</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                    </tr>
+                    <tr>
+                        <td>INT & MI PAID:</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                    </tr>
+                    <tr class="table-border">
+                        <td>CLOSING/POINTS:</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL COST:</td>
+                        <td class="orange">$2,058.01</td>
+                        <td class="orange">$2,058.01</td>
+                        <td class="orange"> $2,058.01</td>
+                        <td class="orange">$2,058.01</td>
+                    </tr>
+                    <tr>
+                        <td>NET SAVINGS:</td>
+                        <td class="text-green">$0.00</td>
+                        <td class="text-green">$0.00</td>
+                        <td class="text-green">$0.00</td>
+                        <td class="text-red">$0.00</td>
+                    </tr>
+
+                    <tr class="row-des">
+                        <td colspan="5">
+                            <div class="table-info-cell">
+
+                                <p class="long">This section overviews an estimate of short term payments for each
+                                    prospective mortgage plan</p>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal translate-->
+
+<!-- Modal 15 YEARS ANALYSIS table-->
+<div class="modal fade" id="yearAnalysisModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog inner-container">
+        <button type="button" class="inner-container-x x-chart" data-bs-dismiss="modal" aria-label="Close">×
+        </button>
+        <div class="summary">
+            <div class="table-label-and-filter">
+                <div class="table-label">15 YEARS ANALYSIS</div>
+            </div>
+            <div class="table-fixed-column">
+                <table>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>OPTION 1 - 5.875%</th>
+                        <th>OPTION 2 - 5.875%</th>
+                        <th>OPTION 3 - 5.875%</th>
+                        <th>OPTION 4 - 5.875%</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>HOME VALUE:</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>LOAN BALANCE:</td>
+                        <td>$1,496.13 /td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                        <td>$259,900</td>
+                    </tr>
+                    <tr>
+                        <td>EQUITY:</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                        <td>$324.88</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL PRINCIPAL:</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                        <td>$237.00</td>
+                    </tr>
+                    <tr class="table-border">
+                        <td>TOTAL PITI:</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                        <td>360</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL INT & MI:</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                        <td>$2,058.01</td>
+                    </tr>
+
+                    <tr class="row-des">
+                        <td colspan="5">
+                            <div class="table-info-cell">
+                                <p class="tax-appreciate">Property Appreciation: 4% Tax Bracket: 0%</p>
+                                <p class="long">This section overviews an estimate of your long term payments for each
+                                    prospective mortgage plan.</p>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal translate-->
+
 <footer>
 
 </footer>
@@ -833,15 +1109,26 @@
     google.setOnLoadCallback(drawChart);
 
     function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['option', 'Payment', 'Escrows', 'Reduction Pmt', 'Investment Pmt'],
-            ['OPTION 1 - 5.875%', 1496.13, 561.88, 0, 0],
-            ['OPTION 2 - 6.5%', 1756, 561.88, 0, 0],
-            ['OPTION 3 - 6.75%', 1685, 561.88, 0, 0],
-            ['OPTION 3 - 6.75%', 1861, 561.88, 0, 0]
+        var data = new google.visualization.DataTable();
+        data.addColumn('string');
+        data.addColumn('number');
+        data.addColumn('number');
+        data.addColumn('number');
+        data.addColumn('number');
+        data.addRows([
+                ['OPTION 1 - 5.875%', 1496.13, 561.88, 0, 0],
+                ['OPTION 2 - 6.5%', 1756, 561.88, 0, 0],
+                ['OPTION 3 - 6.75%', 1685, 561.88, 0, 0],
+                ['OPTION 3 - 6.75%', 1861, 561.88, 0, 0]
         ]);
 
-        var view = new google.visualization.DataView(data);
+        // // Make an API call to retrieve data
+        // $.getJSON("https://api.example.com/sales", function(salesData) {
+        //     // Add the data to the chart's data table
+        //     salesData.forEach(function(sale) {
+        //         data.addRow([sale.year, sale.amount]);
+        //     });
+        let view = new google.visualization.DataView(data);
 
         let options = {
             vAxis: {format: '$#,###', textStyle: {color: '#FFF'}},
@@ -867,7 +1154,7 @@
     google.charts.setOnLoadCallback(drawChart4);
 
     function drawChart4() {
-        var data = new google.visualization.DataTable();
+        let data = new google.visualization.DataTable();
         data.addColumn('string');
         data.addColumn('number');
 
