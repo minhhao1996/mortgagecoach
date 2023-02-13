@@ -3,9 +3,6 @@ $(function() {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });
 
-$('.switch-view').on('click', function(){
-  $('.content').toggleClass('container-small container-fluid');
-});
 $('#reinvestment-strategy-tab').on('click', function(){
   $('#staticBackdrop .inner-container').css('max-width','1400px');
 });
@@ -13,6 +10,16 @@ $('#payment-breakdown-tab ,#closing-costs-tab').on('click', function(){
   $('#staticBackdrop .inner-container').css('max-width','900px');
 });
 
+$( window ).resize(function() {
+  if (window.innerWidth <= 1280) {
+    $('.content').removeClass('container-fluid').addClass("container-small");
+  }else {
+    $('.content').removeClass('container-small').addClass("container-fluid");
+
+  }
+
+});
+///////////////////////////
 google.load("visualization", "1", {packages: ["corechart"]});
 google.setOnLoadCallback(drawChart1);
 
@@ -60,10 +67,9 @@ function drawChart1() {
   window.addEventListener('resize', function () {
     chart.draw(data, options);
   }, false);
-  document.getElementById('switch-view').addEventListener('click', function () {
-    chart.draw(data, options);
-  });
+
 }
+///////////////////////////
 google.charts.load('current', {'packages': ['corechart']});
 google.charts.setOnLoadCallback(drawChart2);
 
@@ -111,11 +117,10 @@ function drawChart2() {
   window.addEventListener('resize', function () {
     chart.draw(data, options);
   }, false);
-  document.getElementById('switch-view').addEventListener('click', function () {
-    chart.draw(data, options);
-  });
+
 }
 
+///////////////////////////
 google.charts.setOnLoadCallback(drawChart3);
 
 function drawChart3() {
@@ -147,6 +152,7 @@ function drawChart3() {
     legend: {
       position: 'none'
     },
+
     colors: ['#87AB65'],
     seriesType: 'bars',
     vAxis: {format: '$#,###', textStyle: {color: '#FFF'}},
@@ -162,8 +168,7 @@ function drawChart3() {
   window.addEventListener('resize', function () {
     chart.draw(data, options);
   }, false);
-  document.getElementById('switch-view').addEventListener('click', function () {
-    chart.draw(data, options);
-  });
+
 
 }
+///////////////////////////
