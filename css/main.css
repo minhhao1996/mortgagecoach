@@ -293,6 +293,7 @@ body {
     --mcLoadingOne: #96c8fa;
     --mcLoadingTwo: var(--mcBlueDeep);
     --chartBackgroundColor: #7d1616;
+    --chartBackgroundColorHover: #EEAA44;
     --primaryColor: rgb(67, 168, 208);
     --pCDark: hsl(197, 60%, 48.5%);
     --pC2: rgba(25, 77, 95, 0.8);
@@ -422,7 +423,7 @@ body {
     margin-right: 15px;
 }
 
-.header-button .disclosure-button {
+ .disclosure-button {
     text-transform: uppercase;
     background-color: var(--primaryColor);
     color: white;
@@ -435,7 +436,10 @@ body {
     cursor: pointer;
     margin: 5px;
 }
-
+.disclosure-button:hover{
+    color: var(--primaryColor);
+    background-color: white;
+}
 .header-button button:hover,
 .header-button button:focus {
     color: var(--primaryColor);
@@ -1023,7 +1027,7 @@ table tr > td:first-child {
 }
 
 .t-tab.active, .modal-tab.active {
-    background-color: var(--pCDark);
+    background-color: var(--chartBackgroundColor);
 
     border: none;
     color: white;
@@ -1034,7 +1038,7 @@ table tr > td:first-child {
 
 .t-tab:hover,
 .modal-tab:hover {
-    background-color: var(--mcBlueDeepDark);
+    background-color: var(--chartBackgroundColorHover);
     color: white;
 }
 
@@ -1137,8 +1141,8 @@ table tr > td:first-child {
     text-align: center;
     padding: 1rem;
     border-radius: 0 0 4px 4px;
-    font-size: 1rem;
-    background-color: #43a8d0;
+    font-size: 0.9rem;
+    background-color: var(--chartBackgroundColor);
     color: white;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -1147,7 +1151,7 @@ table tr > td:first-child {
 }
 
 .translate-footer .disclaimer-button:hover {
-    background-color: var(--mcBlueDeepDark);
+    background-color: var(--chartBackgroundColorHover);
 }
 .nmls-address-container {
     font-size: 0.8rem;
